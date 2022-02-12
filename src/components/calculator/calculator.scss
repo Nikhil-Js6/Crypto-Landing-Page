@@ -1,0 +1,152 @@
+.calculator{
+    height: calc(100vh + 80px);
+    padding: 100px 50px;
+    background-color: rgb(72, 77, 155);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .calcTop{
+        flex: 1.2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .calcHeading{
+            font-size: 36px;
+            font-weight: 400;
+            color: #fff;
+            margin-bottom: 50px;
+            span{
+                color: rgb(252, 110, 85);
+            }
+        }
+    }
+    .calcBottom{
+        flex: 2.8;
+        width: 75%;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 12px;
+        .input{
+            flex: 3;
+            height: 100%;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            margin-right: 20px;
+            .inputElement{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                .inputHeading{
+                    font-size: 22px;
+                    font-weight: 300;
+                    color: rgb(72, 77, 155);
+                }
+                .inputSpan{
+                    width: 65%;
+                    margin: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .inputIcon{
+                        width: 10%;
+                        font-size: 32px;
+                        color: rgb(72, 77, 155);
+                        cursor: pointer;
+                    }
+                    .inputData{
+                        width: 80%;
+                        text-align: center;
+                        margin: 0 5px;
+                        font-size: 22px;
+                        color: rgb(248, 121, 98);
+                        border-bottom: 2px solid rgb(72, 77, 155);
+                    }
+                }
+                .options{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    padding: 10px;
+                    .option{
+                        width: 100px;
+                        padding: 10px;
+                        margin: 8px;
+                        border-radius: 22px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1.4px solid rgb(72, 77, 155);
+                        color: rgb(72, 77, 155);
+                        cursor: pointer;
+                    }
+                    &selected{
+                        background-color: rgb(72, 77, 155);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .output{
+            flex: 2;
+            height: 90%;
+            padding: 24px;
+            border-radius: 12px;
+            color: rgb(248, 248, 248);
+            background-color: slateblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            .amount{
+                color: rgb(250, 126, 104);
+            }
+            .outputMid{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .value{
+                    font-weight: 400;
+                    font-size: 20px;
+                    margin-bottom: 12px;
+                }
+                .totalAmount{
+                    font-size: 36px;
+                    color: aquamarine;
+                }
+            }
+            .years{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .outputIcon{
+                    font-size: 36px;
+                    cursor: pointer;
+                    margin: 0 10px;
+                }
+                .year{
+                    font-size: 22px;
+                }
+            }
+            .outputBottom{
+                color: rgb(224, 224, 224);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                p{
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
