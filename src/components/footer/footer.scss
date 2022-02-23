@@ -1,0 +1,266 @@
+$large: 968px;
+$medium: 710px;
+
+.footer{
+    height: max-content;
+    width: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(77, 72, 155);
+    color: #dfff;
+    position: relative;
+    @media screen and (max-width: $large) {
+        padding: 20px;
+        justify-content: space-around;
+    }
+    @media screen and (max-width: '560px') {
+    }
+    .waveImg{
+        position: absolute;
+        top: -55px;
+        left: 0;
+        width: 100%;
+        @media screen and (max-width: '670px') {
+            top: -40px;
+        }
+        @media screen and (max-width: '495px') {
+            top: -20px;
+        }
+        @media screen and (max-width: '300px') {
+            display: none;
+        }
+    }
+    .footerTop{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .footerLeft{
+            flex: 3;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media screen and (max-width: $medium) {
+                flex-direction: column;
+                align-items: center;
+                .links{
+                    flex-direction: row;
+                }
+            }
+            .links{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                z-index: 2;
+                .linkHeader{
+                    font-weight: 600;
+                    margin: 10px 0;
+                    @media screen and (max-width: '768px') {
+                        font-size: 24px;
+                    }
+                }
+                .linkItem{
+                    margin-top: 5px;
+                    color: rgb(192, 192, 192);
+                    cursor: pointer;
+                    @media screen and (max-width: '768px') {
+                        font-size: 22px;
+                    }
+                    &:hover{
+                        color: aquamarine;
+                    }
+                }
+            }
+            .contacts{
+                flex: 2.2;
+                z-index: 2;
+                margin-bottom: 30px;
+                .links{
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    .linkSpan{
+                        flex: .3;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+                .linkItem{
+                    text-decoration: none;
+                    &:hover{
+                        color:rgb(148, 134, 226);
+                    }
+                }
+            }
+            .footerInfo{
+                flex: 3;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                .footerLinks{
+                    flex: 1;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    .links{
+                        margin: 12px;
+                    }
+                    @media screen and (max-width: $medium) {
+                        flex-wrap: wrap;
+                        .links{
+                            margin: 10px;
+                            flex: 1;
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: $large) {
+            flex-direction: column-reverse;
+        }
+        .footerLogo{
+            flex: 1;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            .logo{
+                font-family: 'Varela Round', sans-serif;
+                margin-left: 30px;
+                font-size: 30px;
+                font-weight: 600;
+                cursor: pointer;
+                @media screen and (max-width: $large) {
+                    font-size: 35px;
+                }
+                @media screen and (max-width: '768px') {
+                    font-size: 70px;
+                }
+                span{
+                    color: rgb(233, 142, 56);
+                }
+            }
+            .appSocial{
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .iconsWrapper{
+                    width: 40px;
+                    height: 40px;
+                    margin: 16px 10px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: slateblue;
+                    z-index: 2;
+                    cursor: pointer;
+                    @media screen and (max-width: '768px') {
+                        width: 60px;
+                        height: 60px;
+                    }
+                    .icon1{
+                        @media screen and (max-width: '768px') {
+                            font-size: 40px;
+                        }
+                        &:hover{
+                            color: #2277e0;
+                        }
+                    }
+                    .icon2{
+                        @media screen and (max-width: '768px') {
+                            font-size: 40px;
+                        }
+                        &:hover{
+                            color: #cb4ed6;
+                        }
+                    }
+                    .icon3{
+                        @media screen and (max-width: '768px') {
+                            font-size: 40px;
+                        }
+                        &:hover{
+                            color: #488fe6;
+                        }
+                    }
+                    .icon4{
+                        @media screen and (max-width: '768px') {
+                            font-size: 40px;
+                        }
+                        &:hover{
+                            color: #42b0d1;
+                        }
+                    }
+                    &:hover{
+                        background-color: rgb(100, 83, 211);
+                    }
+                }
+            }
+            .appLink{
+                margin-top: 10px;
+                display: flex;
+                @media screen and (max-width: '370px') {
+                    flex-direction: column;
+                }
+                .storeImg{
+                    width: 160px;
+                    object-fit: cover;
+                    cursor: pointer;
+                    z-index: 1;
+                    @media screen and (max-width: '768px') {
+                        width: 220px;
+                    }
+                }
+            }
+        }
+    }
+    .address{
+        margin-top: 50px;
+        font-size: 13px;
+        @media screen and (max-width: '768px') {
+            font-size: 12px;
+        }
+    }
+    .options{
+        color: rgb(192, 192, 192);
+        margin-top: 30px;
+        width: 90%;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        @media screen and (max-width: $medium) {
+            flex-wrap: wrap;
+        }
+        .option{
+            margin: 10px;
+            @media screen and (max-width: '768px') {
+                font-size: 20px;
+            }
+            &:hover{
+                color: rgb(170, 253, 226);
+                cursor: pointer;
+            }
+        }
+    }
+    .warning{
+        font-size: 14px;
+        width: 90%;
+        margin-top: 30px;
+        align-self: center;
+        text-align: center;
+        padding: 20px;
+        background-color: #000;
+        color: #fff;
+        border: 1.3px solid #fff;
+        @media screen and (max-width: '768px') {
+            font-size: 12px;
+        }
+    }
+}
